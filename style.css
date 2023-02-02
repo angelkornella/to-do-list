@@ -1,0 +1,39 @@
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+  }
+
+  #login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+  }
+
+  #login input[type="text"],
+  #login input[type="password"] {
+      flex-grow: 0;
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 18px;
+      border-radius: 5px;
+      border: 1px solid gray;
+  }
+
+  #login input[type="submit"] {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 18px;
+      border-radius: 5px;
+      border: none;
+      background-color: lightblue;
+      color: white;
+      cursor: pointer;
+  }
