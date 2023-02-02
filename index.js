@@ -1,16 +1,6 @@
-const login = document.getElementById("login");
 const form = document.querySelector("form");
 const input = document.querySelector("input");
 const todolist = document.querySelector("#todolist");
-
-login.children[3].addEventListener("click", (e) => {
-    if (login.children[1].value === "admin" && login.children[2].value === "admin") {
-        window.location.href = "main.html";
-    }
-    else {
-        alert("Maaf, username atau password Anda tidak tepat.")
-    }
-})
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
