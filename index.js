@@ -33,5 +33,17 @@ function handleDelete(e) {
     e.target.parentElement.remove();
 }
 
+function handleCheck(e) {
+    if (!e.target.matches("input[type='checkbox']")) return;
+    const li = e.target.parentElement;
+    if (e.target.checked) {
+        completedlist.insertBefore(li, completedlist.firstChild);
+    } else {
+        todolist.insertBefore(li, todolist.firstChild);
+    }
+}
+
 todolist.addEventListener("click", handleDelete);
+todolist.addEventListener("click", handleCheck);
 completedlist.addEventListener("click", handleDelete);
+completedlist.addEventListener("click", handleCheck);
