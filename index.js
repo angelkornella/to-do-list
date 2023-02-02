@@ -43,7 +43,18 @@ function handleCheck(e) {
     }
 }
 
+function handleUpdate(e) {
+    if (!e.target.matches("span")) return;
+    const text = e.target.textContent;
+    const updatedText = prompt("Update the item:", text);
+    if (updatedText) {
+        e.target.textContent = updatedText;
+    }
+}
+
 todolist.addEventListener("click", handleDelete);
 todolist.addEventListener("click", handleCheck);
+todolist.addEventListener("click", handleUpdate);
 completedlist.addEventListener("click", handleDelete);
 completedlist.addEventListener("click", handleCheck);
+completedlist.addEventListener("click", handleUpdate);
