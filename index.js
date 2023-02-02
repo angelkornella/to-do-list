@@ -27,3 +27,11 @@ form.addEventListener("submit", (e) => {
     input.value = "";
     console.log(input.value)
 });
+
+function handleDelete(e) {
+    if (!e.target.matches("button")) return;
+    e.target.parentElement.remove();
+}
+
+todolist.addEventListener("click", handleDelete);
+completedlist.addEventListener("click", handleDelete);
