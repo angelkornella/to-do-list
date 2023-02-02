@@ -76,13 +76,13 @@
       color: white;
   }
 
-  #todolist {
+  #todolist, #completedlist {
       list-style: none;
       margin: 0;
       padding: 0;
   }
 
-  #todolist li {
+  #todolist li, #completedlist li {
       background-color: lightblue;
       margin-top: 10px;
       padding: 20px;
@@ -92,18 +92,18 @@
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  #todolist input[type="checkbox"] {
+  #todolist input[type="checkbox"], #completedlist input[type="checkbox"] {
       margin-right: 10px;
   }
 
-  #todolist span {
+  #todolist span, #completedlist span {
       flex-grow: 1;
       text-decoration: none;
       font-weight: bold;
       margin-right: 10px;
   }
 
-  #todolist button {
+  #todolist button, #completedlist button {
       background-color: tomato;
       border: none;
       color: white;
